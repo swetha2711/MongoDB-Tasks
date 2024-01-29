@@ -1,0 +1,315 @@
+db.users.find().pretty()
+{
+        "_id" : ObjectId("65b704e602cad30da8ef1213"),
+        "userId" : 1,
+        "name" : "Keerthi",
+        "email" : "keerthi@gmail.com",
+        "mobile" : "9790056565"
+}
+{
+        "_id" : ObjectId("65b704e602cad30da8ef1214"),
+        "userId" : 2,
+        "name" : "Virat",
+        "email" : "virat@gmail.com",
+        "mobile" : "9597133227"
+}
+{
+        "_id" : ObjectId("65b704e602cad30da8ef1215"),
+        "userId" : 3,
+        "name" : "Bincy",
+        "email" : "bincy@gmail.com",
+        "mobile" : "9578667987"
+}
+{
+        "_id" : ObjectId("65b704e602cad30da8ef1216"),
+        "userId" : 4,
+        "name" : "Peter",
+        "email" : "peter@gmail.com",
+        "mobile" : "9884217901"
+}
+
+codekata:
+db.codekata.find().pretty()
+{
+        "_id" : ObjectId("65b7057d02cad30da8ef1217"),
+        "userId" : 1,
+        "problemsSolved" : 100,
+        "rank" : 40000,
+        "geekscoins" : 4800
+}
+{
+        "_id" : ObjectId("65b7057d02cad30da8ef1218"),
+        "userId" : 2,
+        "problemsSolved" : 300,
+        "rank" : 20000,
+        "geekscoins" : 7800
+}
+{
+        "_id" : ObjectId("65b7057d02cad30da8ef1219"),
+        "userId" : 3,
+        "problemsSolved" : 250,
+        "rank" : 30000,
+        "geekscoins" : 6800
+}
+{
+        "_id" : ObjectId("65b7057d02cad30da8ef121a"),
+        "userId" : 4,
+        "problemsSolved" : 200,
+        "rank" : 50000,
+        "geekscoins" : 2800
+}
+Attendance:
+db.attendance.find().pretty()
+{
+        "_id" : ObjectId("65b7064c02cad30da8ef121b"),
+        "userId" : 1,
+        "date" : ISODate("2020-10-20T00:00:00Z"),
+        "status" : "present"
+}
+{
+        "_id" : ObjectId("65b7064c02cad30da8ef121c"),
+        "userId" : 2,
+        "date" : ISODate("2020-10-20T00:00:00Z"),
+        "status" : "present"
+}
+{
+        "_id" : ObjectId("65b7064c02cad30da8ef121d"),
+        "userId" : 3,
+        "date" : ISODate("2020-10-20T00:00:00Z"),
+        "status" : "absent"
+}
+{
+        "_id" : ObjectId("65b7064c02cad30da8ef121e"),
+        "userId" : 4,
+        "date" : ISODate("2020-10-20T00:00:00Z"),
+        "status" : "absent"
+}
+
+Topics:
+db.topics.find().pretty()
+{
+        "_id" : ObjectId("65b706ea02cad30da8ef121f"),
+        "topic_id" : 1,
+        "topic_name" : "Introduction to JS",
+        "tasks" : [
+                "for loop",
+                "if condition",
+                "functions"
+        ],
+        "date" : ISODate("2020-10-20T00:00:00Z")
+}
+{
+        "_id" : ObjectId("65b706ea02cad30da8ef1220"),
+        "topic_id" : 2,
+        "topic_name" : "HTML and CSS",
+        "tasks" : [
+                "form",
+                "grid"
+        ],
+        "date" : ISODate("2020-10-21T00:00:00Z")
+}
+{
+        "_id" : ObjectId("65b706ea02cad30da8ef1221"),
+        "topic_id" : 3,
+        "topic_name" : "Javascript-events",
+        "tasks" : [
+                "event-bubbling",
+                "event-listeners"
+        ],
+        "date" : ISODate("2020-10-22T00:00:00Z")
+}
+{
+        "_id" : ObjectId("65b706ea02cad30da8ef1222"),
+        "topic_id" : 4,
+        "topic_name" : "mysql-crud",
+        "tasks" : [
+                "create-table",
+                "update-table",
+                "insert"
+        ],
+        "date" : ISODate("2020-10-23T00:00:00Z")
+}
+{
+        "_id" : ObjectId("65b706ea02cad30da8ef1223"),
+        "topic_id" : 5,
+        "topic_name" : "mongo",
+        "tasks" : [
+                "find",
+                "aggregate"
+        ],
+        "date" : ISODate("2020-10-24T00:00:00Z")
+}
+
+Tasks:
+> db.tasks.find().pretty()
+{
+        "_id" : ObjectId("65b70a3402cad30da8ef122e"),
+        "user_id" : 1,
+        "task_name" : "Javascript Problem Solving",
+        "date" : ISODate("2020-10-15T00:00:00Z"),
+        "submission_date" : ISODate("2020-10-21T00:00:00Z"),
+        "task_status" : "Yes"
+}
+{
+        "_id" : ObjectId("65b70a3402cad30da8ef122f"),
+        "user_id" : 2,
+        "task_name" : "Pagination design",
+        "date" : ISODate("2020-10-16T00:00:00Z"),
+        "submission_date" : ISODate("2020-10-22T00:00:00Z"),
+        "task_status" : "Yes"
+}
+{
+        "_id" : ObjectId("65b70a3402cad30da8ef1230"),
+        "user_id" : 3,
+        "task_name" : "Calculator design",
+        "date" : ISODate("2020-10-17T00:00:00Z"),
+        "submission_date" : ISODate("2020-10-23T00:00:00Z"),
+        "task_status" : "No"
+}
+{
+        "_id" : ObjectId("65b70a3402cad30da8ef1231"),
+        "user_id" : 4,
+        "task_name" : "Form design",
+        "date" : ISODate("2020-10-18T00:00:00Z"),
+        "submission_date" : ISODate("2020-10-24T00:00:00Z"),
+        "task_status" : "Yes"
+}
+{
+        "_id" : ObjectId("65b70a3402cad30da8ef1232"),
+        "user_id" : 5,
+        "task_name" : "Callback Hell Task",
+        "date" : ISODate("2020-10-19T00:00:00Z"),
+        "submission_date" : ISODate("2020-10-25T00:00:00Z"),
+        "task_status" : "No"
+}
+
+Company_drives:
+> db.drives.find().pretty()
+{
+        "_id" : ObjectId("65b7095902cad30da8ef1224"),
+        "drive_id" : 1,
+        "drive_name" : "google",
+        "user_ids" : [
+                1,
+                2,
+                3,
+                4
+        ],
+        "date" : ISODate("2020-10-15T00:00:00Z")
+}
+{
+        "_id" : ObjectId("65b7095902cad30da8ef1225"),
+        "drive_id" : 2,
+        "drive_name" : "hotstar",
+        "user_ids" : [
+                1,
+                2,
+                3,
+                4
+        ],
+        "date" : ISODate("2020-10-16T00:00:00Z")
+}
+{
+        "_id" : ObjectId("65b7095902cad30da8ef1226"),
+        "drive_id" : 3,
+        "drive_name" : "microsoft",
+        "user_ids" : [
+                3,
+                4
+        ],
+        "date" : ISODate("2020-10-25T00:00:00Z")
+}
+{
+        "_id" : ObjectId("65b7095902cad30da8ef1227"),
+        "drive_id" : 4,
+        "drive_name" : "amazon",
+        "user_ids" : [
+                1,
+                2,
+                3
+        ],
+        "date" : ISODate("2020-10-26T00:00:00Z")
+}
+{
+        "_id" : ObjectId("65b7095902cad30da8ef1228"),
+        "drive_id" : 5,
+        "drive_name" : "redbus",
+        "user_ids" : [
+                1,
+                2,
+                3,
+                4
+        ],
+        "date" : ISODate("2020-09-15T00:00:00Z")
+}
+
+Mentors:
+> db.mentors.find().pretty()
+{
+        "_id" : ObjectId("65b7097b02cad30da8ef1229"),
+        "mentor_id" : 5,
+        "mentee_ids" : [
+                1,
+                2,
+                3,
+                4,
+                5,
+                6,
+                7,
+                8,
+                9,
+                10,
+                11,
+                12,
+                13,
+                14,
+                15,
+                16,
+                17
+        ],
+        "mentee_count" : 17
+}
+{
+        "_id" : ObjectId("65b7097b02cad30da8ef122a"),
+        "mentor_id" : 6,
+        "mentee_ids" : [
+                1,
+                2,
+                3,
+                4
+        ],
+        "mentee_count" : 4
+}
+{
+        "_id" : ObjectId("65b7097b02cad30da8ef122b"),
+        "mentor_id" : 7,
+        "mentee_ids" : [
+                1,
+                2,
+                3
+        ],
+        "mentee_count" : 3
+}
+{
+        "_id" : ObjectId("65b7097b02cad30da8ef122c"),
+        "mentor_id" : 8,
+        "mentee_ids" : [
+                1
+        ],
+        "mentee_count" : 1
+}
+{
+        "_id" : ObjectId("65b7097b02cad30da8ef122d"),
+        "mentor_id" : 9,
+        "mentee_ids" : [
+                1,
+                2,
+                3,
+                4,
+                5,
+                6,
+                7,
+                8
+        ],
+        "mentee_count" : 8
+}
